@@ -4,6 +4,23 @@ export default {
   activity: {
     disabled: true,
   },
+  ethculture: {
+    messages: defineMessages({
+      name: {
+        id: 'vocab.concept.ethculture.name',
+        description: 'The name of the ethculture vocabulary.',
+        defaultMessage: 'Ethnographic Culture',
+      },
+      collectionName: {
+        id: 'vocab.concept.ethculture.collectionName',
+        description: 'The name of a collection of records from the ethculture vocabulary.',
+        defaultMessage: 'Ethnographic Cultures',
+      },
+    }),
+    serviceConfig: {
+      servicePath: 'urn:cspace:name(ethculture)',
+    },
+  },
   worktype: {
     messages: defineMessages({
       name: {
