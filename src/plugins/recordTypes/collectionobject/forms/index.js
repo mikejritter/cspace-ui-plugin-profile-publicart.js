@@ -1,4 +1,5 @@
 import defaultForm from './default';
+import tombstoneForm from './tombstone';
 
 export default configContext => ({
   default: defaultForm(configContext),
@@ -8,4 +9,5 @@ export default configContext => ({
   photo: {
     disabled: true,
   },
+  tombstone: tombstoneForm(configContext),
 });
