@@ -1,0 +1,205 @@
+import { defineMessages } from 'react-intl';
+
+export default (configContext) => {
+  const {
+    AutocompleteInput,
+    CompoundInput,
+    DateInput,
+    StructuredDateInput,
+    TermPickerInput,
+    TextInput,
+  } = configContext.inputComponents;
+
+  const {
+    configKey: config,
+  } = configContext.configHelpers;
+
+  const {
+    DATA_TYPE_FLOAT,
+    DATA_TYPE_STRUCTURED_DATE,
+  } = configContext.dataTypes;
+
+  const {
+    extensions,
+  } = configContext.config;
+
+  return {
+    'ns2:acquisitions_commission': {
+      [config]: {
+        service: {
+          ns: 'http://collectionspace.org/services/acquisition/domain/commission',
+        },
+      },
+      commissioningBodyList: {
+        [config]: {
+          view: {
+            type: CompoundInput,
+          },
+        },
+        commissioningBody: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.ext.commission.commissioningBody.name',
+                defaultMessage: 'Commissioning body',
+              },
+            }),
+            view: {
+              type: AutocompleteInput,
+              props: {
+                source: 'person/local,organization/local',
+              },
+            },
+          },
+        },
+      },
+      commissionDate: {
+        [config]: {
+          dataType: DATA_TYPE_STRUCTURED_DATE,
+          messages: defineMessages({
+            name: {
+              id: 'field.ext.commission.commissionDate.name',
+              defaultMessage: 'Commission date',
+            },
+          }),
+          searchView: {
+            type: DateInput,
+          },
+          view: {
+            type: StructuredDateInput,
+          },
+        },
+        ...extensions.structuredDate.fields,
+      },
+      commissionBudgetGroupList: {
+        [config]: {
+          view: {
+            type: CompoundInput,
+          },
+        },
+        commissionBudgetGroup: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.ext.commission.commissionBudgetGroup.name',
+                defaultMessage: 'Budget',
+              },
+            }),
+            repeating: true,
+            view: {
+              type: CompoundInput,
+            },
+          },
+          commissionBudgetType: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.ext.commission.commissionBudgetType.name',
+                  defaultMessage: 'Budget type',
+                },
+              }),
+              view: {
+                type: TermPickerInput,
+                props: {
+                  source: 'budgettype',
+                },
+              },
+            },
+          },
+          commissionBudgetTypeNote: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.ext.commission.commissionBudgetTypeNote.name',
+                  defaultMessage: 'Budget type note',
+                },
+              }),
+              view: {
+                type: TextInput,
+                props: {
+                  multiline: true,
+                },
+              },
+            },
+          },
+          commissionProjectedValueCurrency: {
+            [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.ext.commission.commissionProjectedValueCurrency.fullName',
+                  defaultMessage: 'Projected value currency',
+                },
+                name: {
+                  id: 'field.ext.commission.commissionProjectedValueCurrency.name',
+                  defaultMessage: 'Currency',
+                },
+              }),
+              view: {
+                type: TermPickerInput,
+                props: {
+                  source: 'currency',
+                },
+              },
+            },
+          },
+          commissionProjectedValueAmount: {
+            [config]: {
+              dataType: DATA_TYPE_FLOAT,
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.ext.commission.commissionProjectedValueAmount.fullName',
+                  defaultMessage: 'Projected value amount',
+                },
+                name: {
+                  id: 'field.ext.commission.commissionProjectedValueAmount.name',
+                  defaultMessage: 'Amount',
+                },
+              }),
+              view: {
+                type: TextInput,
+              },
+            },
+          },
+          commissionActualValueCurrency: {
+            [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.ext.commission.commissionActualValueCurrency.fullName',
+                  defaultMessage: 'Actual value currency',
+                },
+                name: {
+                  id: 'field.ext.commission.commissionActualValueCurrency.name',
+                  defaultMessage: 'Currency',
+                },
+              }),
+              view: {
+                type: TermPickerInput,
+                props: {
+                  source: 'currency',
+                },
+              },
+            },
+          },
+          commissionActualValueAmount: {
+            [config]: {
+              dataType: DATA_TYPE_FLOAT,
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.ext.commission.commissionActualValueAmount.fullName',
+                  defaultMessage: 'Actual value amount',
+                },
+                name: {
+                  id: 'field.ext.commission.commissionActualValueAmount.name',
+                  defaultMessage: 'Amount',
+                },
+              }),
+              view: {
+                type: TextInput,
+              },
+            },
+          },
+        },
+      },
+    },
+  };
+};
