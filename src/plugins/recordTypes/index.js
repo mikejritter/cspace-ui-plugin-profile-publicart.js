@@ -5,6 +5,7 @@ import conditioncheck from './conditioncheck';
 import conservation from './conservation';
 import intake from './intake';
 import loanin from './loanin';
+import movement from './movement';
 
 export default [
   acquisition,
@@ -14,4 +15,5 @@ export default [
   conservation,
   intake,
   loanin,
+  movement,
 ];
