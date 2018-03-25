@@ -4,6 +4,7 @@ import concept from './concept';
 import conditioncheck from './conditioncheck';
 import conservation from './conservation';
 import intake from './intake';
+import loanin from './loanin';
 
 export default [
   acquisition,
@@ -12,4 +13,5 @@ export default [
   conditioncheck,
   conservation,
   intake,
+  loanin,
 ];
