@@ -7,6 +7,7 @@ import intake from './intake';
 import loanin from './loanin';
 import media from './media';
 import movement from './movement';
+import objectexit from './objectexit';
 import valuation from './valuation';
 import work from './work';
 
@@ -20,6 +21,7 @@ export default [
   loanin,
   media,
   movement,
+  objectexit,
   valuation,
   work,
 ];
