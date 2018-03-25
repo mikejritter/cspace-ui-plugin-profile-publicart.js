@@ -71,7 +71,7 @@ const template = (configContext) => {
               subpath="ns2:collectionobjects_publicart"
             >
               <Field name="publicartProductionDateGroup" tabular={false} >
-                <Field name="publicartProductionStructDateGroup" embedded label="" />
+                <Field name="publicartProductionDate" embedded label="" />
               </Field>
             </Field>
           </Col>

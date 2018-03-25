@@ -43,7 +43,7 @@ export default (configContext) => {
       },
       {
         op: OP_RANGE,
-        path: 'ns2:collectionobjects_publicart/publicartProductionDateGroupList/publicartProductionDateGroup/publicartProductionStructDateGroup',
+        path: 'ns2:collectionobjects_publicart/publicartProductionDateGroupList/publicartProductionDateGroup/publicartProductionDate',
       },
       {
         op: OP_EQ,

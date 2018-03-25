@@ -140,7 +140,7 @@ const template = (configContext) => {
       <Panel name="prod" collapsible collapsed>
         <Field name="publicartProductionDateGroupList" subpath="ns2:collectionobjects_publicart">
           <Field name="publicartProductionDateGroup">
-            <Field name="publicartProductionStructDateGroup" />
+            <Field name="publicartProductionDate" />
             <Field name="publicartProductionDateType" />
           </Field>
         </Field>

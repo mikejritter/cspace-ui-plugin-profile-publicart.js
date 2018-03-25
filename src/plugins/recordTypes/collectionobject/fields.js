@@ -126,16 +126,16 @@ export default (configContext) => {
                 },
               },
             },
-            publicartProductionStructDateGroup: {
+            publicartProductionDate: {
               [config]: {
                 dataType: DATA_TYPE_STRUCTURED_DATE,
                 messages: defineMessages({
                   fullName: {
-                    id: 'field.collectionobjects_publicart.publicartProductionStructDateGroup.fullName',
+                    id: 'field.collectionobjects_publicart.publicartProductionDate.fullName',
                     defaultMessage: 'Production date',
                   },
                   name: {
-                    id: 'field.collectionobjects_publicart.publicartProductionStructDateGroup.name',
+                    id: 'field.collectionobjects_publicart.publicartProductionDate.name',
                     defaultMessage: 'Date',
                   },
                 }),
