@@ -7,6 +7,7 @@ import intake from './intake';
 import loanin from './loanin';
 import media from './media';
 import movement from './movement';
+import work from './work';
 
 export default [
   acquisition,
@@ -18,4 +19,5 @@ export default [
   loanin,
   media,
   movement,
+  work,
 ];
