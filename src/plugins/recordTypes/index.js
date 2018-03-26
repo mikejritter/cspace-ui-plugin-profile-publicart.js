@@ -5,6 +5,7 @@ import conditioncheck from './conditioncheck';
 import conservation from './conservation';
 import intake from './intake';
 import loanin from './loanin';
+import location from './location';
 import media from './media';
 import movement from './movement';
 import objectexit from './objectexit';
@@ -22,6 +23,7 @@ export default [
   conservation,
   intake,
   loanin,
+  location,
   media,
   movement,
   objectexit,
