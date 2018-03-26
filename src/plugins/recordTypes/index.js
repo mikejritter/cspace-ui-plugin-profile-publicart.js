@@ -3,6 +3,7 @@ import collectionobject from './collectionobject';
 import concept from './concept';
 import conditioncheck from './conditioncheck';
 import conservation from './conservation';
+import exhibition from './exhibition';
 import intake from './intake';
 import loanin from './loanin';
 import location from './location';
@@ -21,6 +22,7 @@ export default [
   concept,
   conditioncheck,
   conservation,
+  exhibition,
   intake,
   loanin,
   location,

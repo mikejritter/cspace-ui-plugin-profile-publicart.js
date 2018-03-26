@@ -58,4 +58,6 @@ export default {
   'field.collectionobjects_common.inventoryStatus.name': 'Installation type',
   'field.collectionobjects_common.materialComponentNote.fullName': 'Material note',
   'field.collectionobjects_common.materialComponentNote.name': 'Note',
+
+  'field.exhibitions_common.sponsor.name': 'Support',
 };
