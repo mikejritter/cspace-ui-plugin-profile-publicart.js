@@ -4,6 +4,10 @@ const template = (configContext) => {
   } = configContext.lib;
 
   const {
+    CompoundInput,
+  } = configContext.inputComponents;
+
+  const {
     Panel,
     Row,
     Cols,
@@ -15,6 +19,10 @@ const template = (configContext) => {
     InputTable,
     Subrecord,
   } = configContext.recordComponents;
+
+  const {
+    extensions,
+  } = configContext.config;
 
   return (
     <Field name="document">
@@ -67,12 +75,9 @@ const template = (configContext) => {
               <Field name="historyNote" />
             </Field>
 
-            <Field name="socialMediaGroupList" subpath="ns2:organizations_publicart">
-              <Field name="socialMediaGroup">
-                <Field name="socialMediaHandle" />
-                <Field name="socialMediaHandleType" />
-              </Field>
-            </Field>
+            <CompoundInput subpath="ns2:organizations_publicart">
+              {extensions.socialMedia.form}
+            </CompoundInput>
           </Col>
         </Cols>
       </Panel>
