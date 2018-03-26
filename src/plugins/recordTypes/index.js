@@ -8,6 +8,7 @@ import loanin from './loanin';
 import media from './media';
 import movement from './movement';
 import objectexit from './objectexit';
+import organization from './organization';
 import valuation from './valuation';
 import work from './work';
 
@@ -22,6 +23,7 @@ export default [
   media,
   movement,
   objectexit,
+  organization,
   valuation,
   work,
 ];
