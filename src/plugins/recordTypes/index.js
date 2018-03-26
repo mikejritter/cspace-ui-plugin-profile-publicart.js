@@ -9,6 +9,7 @@ import media from './media';
 import movement from './movement';
 import objectexit from './objectexit';
 import organization from './organization';
+import person from './person';
 import valuation from './valuation';
 import work from './work';
 
@@ -24,6 +25,7 @@ export default [
   movement,
   objectexit,
   organization,
+  person,
   valuation,
   work,
 ];
