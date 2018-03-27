@@ -25,6 +25,10 @@ const template = (configContext) => {
             <Field name="responsibleDepartments">
               <Field name="responsibleDepartment" />
             </Field>
+
+            <Field name="publicartCollections" subpath="ns2:collectionobjects_publicart">
+              <Field name="publicartCollection" />
+            </Field>
           </Col>
 
           <Col>
