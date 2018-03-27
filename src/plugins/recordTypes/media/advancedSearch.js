@@ -39,7 +39,7 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:media_common/rightsHolder',
+        path: 'ns2:media_publicart/publicartRightsHolders/publicartRightsHolder',
       },
       ...extensions.core.advancedSearch,
     ],

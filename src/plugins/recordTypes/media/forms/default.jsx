@@ -46,7 +46,10 @@ const template = (configContext) => {
             </Field>
 
             <Field name="source" />
-            <Field name="rightsHolder" />
+
+            <Field name="publicartRightsHolders" subpath="ns2:media_publicart">
+              <Field name="publicartRightsHolder" />
+            </Field>
           </Col>
         </Cols>
 
