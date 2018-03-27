@@ -64,29 +64,25 @@ const template = (configContext) => {
       </Panel>
 
       <Panel name="prod" collapsible collapsed>
-        <Row>
-          <Col>
-            <Field
-              name="publicartProductionDateGroupList"
-              subpath="ns2:collectionobjects_publicart"
-            >
-              <Field name="publicartProductionDateGroup" tabular={false} >
-                <Field name="publicartProductionDate" embedded label="" />
-              </Field>
-            </Field>
-          </Col>
+        <Field
+          name="publicartProductionDateGroupList"
+          subpath="ns2:collectionobjects_publicart"
+        >
+          <Field name="publicartProductionDateGroup">
+            <Field name="publicartProductionDate" />
+            <Field name="publicartProductionDateType" />
+          </Field>
+        </Field>
 
-          <Col>
-            <Field
-              name="publicartProductionPersonGroupList"
-              subpath="ns2:collectionobjects_publicart"
-            >
-              <Field name="publicartProductionPersonGroup" tabular={false} >
-                <Field name="publicartProductionPerson" embedded label="" />
-              </Field>
-            </Field>
-          </Col>
-        </Row>
+        <Field
+          name="publicartProductionPersonGroupList"
+          subpath="ns2:collectionobjects_publicart"
+        >
+          <Field name="publicartProductionPersonGroup">
+            <Field name="publicartProductionPerson" />
+            <Field name="publicartProductionPersonType" />
+          </Field>
+        </Field>
       </Panel>
 
       <Panel name="hist" collapsible collapsed>
