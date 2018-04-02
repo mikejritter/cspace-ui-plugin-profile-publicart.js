@@ -68,16 +68,6 @@ const template = (configContext) => {
           </Field>
         </Field>
       </Panel>
-
-      <Panel name="exhibitedObjectInformation" collapsible collapsed>
-        <Field name="publicartExhibitionObjectGroupList" subpath="ns2:exhibitions_publicart">
-          <Field name="publicartExhibitionObjectGroup">
-            <Field name="exhibitionObjectNumber" />
-            <Field name="exhibitionObjectName" />
-            <Field name="exhibitionObjectCurrentLocation" />
-          </Field>
-        </Field>
-      </Panel>
     </Field>
   );
 };
