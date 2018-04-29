@@ -4,6 +4,7 @@ export default (configContext) => {
   const {
     CompoundInput,
     DateInput,
+    TermPickerInput,
     TextInput,
     AutocompleteInput,
   } = configContext.inputComponents;
@@ -33,7 +34,10 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: TextInput,
+              type: TermPickerInput,
+              props: {
+                source: 'valuationsourcerole',
+              },
             },
           },
         },
