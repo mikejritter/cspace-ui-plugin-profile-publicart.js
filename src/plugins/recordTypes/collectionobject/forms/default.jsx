@@ -86,11 +86,17 @@ const template = (configContext) => {
         <Field name="objectNameList">
           <Field name="objectNameGroup">
             <Field name="objectName" />
-            <Field name="objectNameSystem" />
-            <Field name="objectNameLanguage" />
             <Field name="objectNameNote" />
           </Field>
         </Field>
+
+        <Row>
+          <Field name="owners">
+            <Field name="owner" />
+          </Field>
+
+          <Col />
+        </Row>
       </Panel>
 
       <Panel name="desc" collapsible collapsed>
@@ -102,18 +108,6 @@ const template = (configContext) => {
         </Field>
 
         {extensions.dimension.form}
-
-        <Panel name="content" collapsible collapsed>
-          <Field name="contentDescription" />
-
-          <Row>
-            <Field name="contentActivities">
-              <Field name="contentActivity" />
-            </Field>
-
-            <Field name="contentDateGroup" />
-          </Row>
-        </Panel>
 
         <Panel name="textInscript" collapsible collapsed>
           <Field name="textualInscriptionGroupList">
@@ -154,18 +148,6 @@ const template = (configContext) => {
         </Field>
 
         <Field name="objectProductionNote" />
-      </Panel>
-
-      <Panel name="hist" collapsible collapsed>
-        <Field name="objectHistoryNote" />
-
-        <Row>
-          <Field name="owners">
-            <Field name="owner" />
-          </Field>
-
-          <Col />
-        </Row>
       </Panel>
 
       <Panel name="hierarchy" collapsible collapsed>

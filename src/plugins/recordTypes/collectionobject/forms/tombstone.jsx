@@ -35,6 +35,8 @@ const template = (configContext) => {
             <Field name="briefDescriptions">
               <Field name="briefDescription" />
             </Field>
+
+            <Field name="computedCurrentLocation" />
           </Col>
         </Row>
 
@@ -45,13 +47,19 @@ const template = (configContext) => {
         </Field>
 
         <Row>
-          <Field name="objectNameList">
-            <Field name="objectNameGroup" tabular={false}>
-              <Field name="objectName" embedded label="" />
+          <Col>
+            <Field name="objectNameList">
+              <Field name="objectNameGroup" tabular={false}>
+                <Field name="objectName" embedded label="" />
+              </Field>
             </Field>
-          </Field>
+          </Col>
 
-          <Col />
+          <Col>
+            <Field name="owners">
+              <Field name="owner" />
+            </Field>
+          </Col>
         </Row>
       </Panel>
 
@@ -84,19 +92,10 @@ const template = (configContext) => {
         >
           <Field name="publicartProductionPersonGroup">
             <Field name="publicartProductionPerson" />
+            <Field name="publicartProductionPersonRole" />
             <Field name="publicartProductionPersonType" />
           </Field>
         </Field>
-      </Panel>
-
-      <Panel name="hist" collapsible collapsed>
-        <Row>
-          <Field name="owners">
-            <Field name="owner" />
-          </Field>
-
-          <Col />
-        </Row>
       </Panel>
     </Field>
   );

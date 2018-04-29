@@ -115,7 +115,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.collectionobjects_publicart.publicartProductionDateGroup.name',
-                  defaultMessage: 'Production date',
+                  defaultMessage: 'Artwork date',
                 },
               }),
               repeating: true,
@@ -132,7 +132,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_publicart.publicartProductionDate.fullName',
-                    defaultMessage: 'Production date',
+                    defaultMessage: 'Artwork date',
                   },
                   name: {
                     id: 'field.collectionobjects_publicart.publicartProductionDate.name',
@@ -153,7 +153,7 @@ export default (configContext) => {
                 messages: defineMessages({
                   fullName: {
                     id: 'field.collectionobjects_publicart.publicartProductionDateType.fullName',
-                    defaultMessage: 'Production date type',
+                    defaultMessage: 'Artwork date type',
                   },
                   name: {
                     id: 'field.collectionobjects_publicart.publicartProductionDateType.name',
