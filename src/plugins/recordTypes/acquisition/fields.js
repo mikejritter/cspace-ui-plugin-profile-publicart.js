@@ -4,6 +4,7 @@ export default (configContext) => {
   const {
     CompoundInput,
     DateInput,
+    TermPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -20,6 +21,18 @@ export default (configContext) => {
 
   return {
     document: {
+      'ns2:acquisitions_common': {
+        acquisitionMethod: {
+          [config]: {
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'acquisitionmethod',
+              },
+            },
+          },
+        },
+      },
       'ns2:acquisitions_publicart': {
         [config]: {
           service: {
