@@ -25,8 +25,11 @@ const template = (configContext) => {
           </Col>
 
           <Col>
-            <Field name="sponsors">
-              <Field name="sponsor" />
+            <Field name="exhibitionSupportGroupList" subpath="ns2:exhibitions_publicart">
+              <Field name="exhibitionSupportGroup">
+                <Field name="exhibitionSupport" />
+                <Field name="exhibitionSupportNote" />
+              </Field>
             </Field>
 
             <Field name="organizers">
