@@ -23,6 +23,7 @@ const template = (configContext) => {
             <Field name="conditionCheckAssessmentDate" />
             <Field name="conditionCheckMethod" />
           </Col>
+
           <Col>
             <Field name="conditionCheckReason" />
             <Field name="conditionChecker" />
