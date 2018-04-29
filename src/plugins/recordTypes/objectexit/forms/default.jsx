@@ -66,11 +66,6 @@ const template = (configContext) => {
             <Field name="disposalProposedRecipient" />
             <Field name="disposalRecipient" />
 
-            <InputTable name="disposal">
-              <Field name="disposalCurrency" />
-              <Field name="displosalValue" />
-            </InputTable>
-
             <InputTable name="groupDisposal">
               <Field name="groupDisposalCurrency" />
               <Field name="groupDisplosalValue" />
