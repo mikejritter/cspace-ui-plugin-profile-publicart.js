@@ -207,7 +207,7 @@ export default (configContext) => {
                 view: {
                   type: AutocompleteInput,
                   props: {
-                    source: 'person/local,organization/local,concept/ethculture',
+                    source: 'person/local,organization/local',
                   },
                 },
               },
