@@ -6,7 +6,6 @@ const template = (configContext) => {
   const {
     Panel,
     Row,
-    Col,
   } = configContext.layoutComponents;
 
   const {
@@ -56,14 +55,8 @@ const template = (configContext) => {
         </Field>
 
         <Row>
-          <Col>
-            <Field name="placementType" subpath="ns2:places_publicart" />
-            <Field name="placementEnvironment" subpath="ns2:places_publicart" />
-          </Col>
-
-          <Col>
-            <Field name="placeType" />
-          </Col>
+          <Field name="placementType" subpath="ns2:places_publicart" />
+          <Field name="placementEnvironment" subpath="ns2:places_publicart" />
         </Row>
 
         <Field name="publicartPlaceOwnerGroupList" subpath="ns2:places_publicart">
@@ -78,47 +71,6 @@ const template = (configContext) => {
         <Field name="placeNote" />
 
         {extensions.address.form}
-      </Panel>
-
-      <Panel name="localityInfo" collapsible collapsed>
-        <Row>
-          <Field name="vCoordinates" />
-          <Field name="vLatitude" />
-          <Field name="vLongitude" />
-          <Field name="vCoordSys" />
-          <Field name="vSpatialReferenceSystem" />
-        </Row>
-
-        <Row>
-          <Field name="vElevation" />
-          <Field name="vDepth" />
-          <Field name="vDistanceAboveSurface" />
-          <Field name="vUnitofMeasure" />
-        </Row>
-
-        <Row>
-          <Col>
-            <Field name="minElevationInMeters" />
-            <Field name="maxElevationInMeters" />
-          </Col>
-
-          <Col>
-            <Field name="minDepthInMeters" />
-            <Field name="maxDepthInMeters" />
-          </Col>
-
-          <Col>
-            <Field name="minDistanceAboveSurfaceMeters" />
-            <Field name="maxDistanceAboveSurfaceMeters" />
-          </Col>
-
-          <Col />
-        </Row>
-
-        <Row>
-          <Field name="vCoordSource" />
-          <Field name="vCoordSourceRefId" />
-        </Row>
       </Panel>
 
       <Panel name="geoRefInfo" collapsible collapsed>

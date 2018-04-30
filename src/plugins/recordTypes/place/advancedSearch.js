@@ -42,10 +42,6 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:places_common/placeType',
-      },
-      {
-        op: OP_EQ,
         path: 'ns2:places_publicart/publicartPlaceOwnerGroupList/publicartPlaceOwnerGroup/owner',
       },
       {
