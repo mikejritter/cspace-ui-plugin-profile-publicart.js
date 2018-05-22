@@ -5,6 +5,7 @@ export default (configContext) => {
     AutocompleteInput,
     CompoundInput,
     OptionPickerInput,
+    TermPickerInput,
     TextInput,
     StructuredDateInput,
   } = configContext.inputComponents;
@@ -19,19 +20,6 @@ export default (configContext) => {
 
   return {
     document: {
-      'ns2:places_common': {
-        placeGeoRefGroupList: {
-          placeGeoRefGroup: {
-            [config]: {
-              view: {
-                props: {
-                  tabular: true,
-                },
-              },
-            },
-          },
-        },
-      },
       'ns2:places_publicart': {
         [config]: {
           service: {
@@ -47,9 +35,9 @@ export default (configContext) => {
               },
             }),
             view: {
-              type: OptionPickerInput,
+              type: TermPickerInput,
               props: {
-                source: 'placementTypes',
+                source: 'placementtypes',
               },
             },
           },

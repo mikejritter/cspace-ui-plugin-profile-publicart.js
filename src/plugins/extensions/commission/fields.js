@@ -44,6 +44,7 @@ export default (configContext) => {
                 defaultMessage: 'Commissioning body',
               },
             }),
+            repeating: true,
             view: {
               type: AutocompleteInput,
               props: {

@@ -38,6 +38,10 @@ const template = (configContext) => {
             <Field name="typeList">
               <Field name="type" />
             </Field>
+
+            <Field name="publishToList" subpath="ns2:media_publicart">
+              <Field name="publishTo" />
+            </Field>
           </Col>
 
           <Col>

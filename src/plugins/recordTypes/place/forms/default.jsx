@@ -6,6 +6,8 @@ const template = (configContext) => {
   const {
     Panel,
     Row,
+    Col,
+    Cols,
   } = configContext.layoutComponents;
 
   const {
@@ -56,7 +58,16 @@ const template = (configContext) => {
 
         <Row>
           <Field name="placementType" subpath="ns2:places_publicart" />
-          <Field name="placementEnvironment" subpath="ns2:places_publicart" />
+          <Field name="placeType" />
+        </Row>
+
+        <Row>
+          <Cols>
+            <Col>
+              <Field name="placementEnvironment" subpath="ns2:places_publicart" />
+            </Col>
+            <Col />
+          </Cols>
         </Row>
 
         <Field name="publicartPlaceOwnerGroupList" subpath="ns2:places_publicart">
@@ -76,9 +87,35 @@ const template = (configContext) => {
       <Panel name="geoRefInfo" collapsible collapsed>
         <Field name="placeGeoRefGroupList">
           <Field name="placeGeoRefGroup">
-            <Field name="decimalLatitude" />
-            <Field name="decimalLongitude" />
-            <Field name="geoRefDateGroup" />
+            <Panel>
+              <Row>
+                <Field name="decimalLatitude" />
+                <Field name="decimalLongitude" />
+                <Field name="geodeticDatum" />
+                <Field name="coordUncertaintyInMeters" />
+                <Field name="coordPrecision" />
+              </Row>
+
+              <Row>
+                <Field name="pointRadiusSpatialFit" />
+                <Field name="footprintWKT" />
+                <Field name="footprintSRS" />
+                <Field name="footprintSpatialFit" />
+              </Row>
+
+              <Row>
+                <Field name="geoReferencedBy" />
+                <Field name="geoRefDateGroup" />
+                <Field name="geoRefProtocol" />
+                <Field name="geoRefSource" />
+                <Field name="geoRefVerificationStatus" />
+              </Row>
+
+              <Row>
+                <Field name="geoRefRemarks" />
+                <Field name="geoRefPlaceName" />
+              </Row>
+            </Panel>
           </Field>
         </Field>
       </Panel>
