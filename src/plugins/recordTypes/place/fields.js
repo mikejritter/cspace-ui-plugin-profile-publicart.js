@@ -26,6 +26,23 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/place/local/publicart',
           },
         },
+        publicArtPlaceType: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.places_publicart.publicArtPlaceType.name',
+                defaultMessage: 'Place type',
+              },
+            }),
+            repeating: true,
+            view: {
+              type: TermPickerInput,
+              props: {
+                source: 'placetypes',
+              },
+            },
+          },
+        },
         placementType: {
           [config]: {
             messages: defineMessages({
@@ -34,6 +51,7 @@ export default (configContext) => {
                 defaultMessage: 'Placement type',
               },
             }),
+            repeating: true,
             view: {
               type: TermPickerInput,
               props: {

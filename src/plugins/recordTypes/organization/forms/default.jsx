@@ -64,10 +64,12 @@ const template = (configContext) => {
             <Field name="organizationRecordTypes">
               <Field name="organizationRecordType" />
             </Field>
+            <Field name="placementType" subpath="ns2:organizations_publicart" />
 
             <Field name="foundingDateGroup" />
             <Field name="foundingPlace" />
             <Field name="dissolutionDateGroup" />
+            <Field name="currentPlace" subpath="ns2:organizations_publicart" />
           </Col>
 
           <Col>

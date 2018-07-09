@@ -58,7 +58,7 @@ const template = (configContext) => {
 
         <Row>
           <Field name="placementType" subpath="ns2:places_publicart" />
-          <Field name="placeType" />
+          <Field name="publicArtPlaceType" subpath="ns2:places_publicart" />
         </Row>
 
         <Row>
