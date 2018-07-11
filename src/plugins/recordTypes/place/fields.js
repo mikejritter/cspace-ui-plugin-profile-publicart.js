@@ -26,36 +26,50 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/place/local/publicart',
           },
         },
-        publicArtPlaceType: {
+        publicArtPlaceTypes: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.places_publicart.publicArtPlaceType.name',
-                defaultMessage: 'Place type',
-              },
-            }),
-            repeating: true,
             view: {
-              type: TermPickerInput,
-              props: {
-                source: 'placetypes',
+              type: CompoundInput,
+            },
+          },
+          publicArtPlaceType: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_publicart.publicArtPlaceType.name',
+                  defaultMessage: 'Place type',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: TermPickerInput,
+                props: {
+                  source: 'placetypes',
+                },
               },
             },
           },
         },
-        placementType: {
+        placementTypes: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.places_publicart.placementType.name',
-                defaultMessage: 'Placement type',
-              },
-            }),
-            repeating: true,
             view: {
-              type: TermPickerInput,
-              props: {
-                source: 'placementtypes',
+              type: CompoundInput,
+            },
+          },
+          placementType: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.places_publicart.placementType.name',
+                  defaultMessage: 'Placement type',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: TermPickerInput,
+                props: {
+                  source: 'placementtypes',
+                },
               },
             },
           },
