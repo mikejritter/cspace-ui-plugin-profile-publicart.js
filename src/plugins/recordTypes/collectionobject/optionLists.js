@@ -6,6 +6,7 @@ export default {
       'assigned-by-artist',
       'collection',
       'cited',
+      'generic',
       'popular',
       'series',
       'trade',
@@ -22,6 +23,10 @@ export default {
       cited: {
         id: 'option.titleTypes.cited',
         defaultMessage: 'cited',
+      },
+      generic: {
+        id: 'option.titleTypes.generic',
+        defaultMessage: 'generic',
       },
       popular: {
         id: 'option.titleTypes.popular',
