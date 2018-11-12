@@ -40,7 +40,7 @@ export default (configContext) => {
               view: {
                 type: AutocompleteInput,
                 props: {
-                  source: 'organization/local',
+                  source: 'organization/local,organization/shared',
                 },
               },
             },

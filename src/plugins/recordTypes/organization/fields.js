@@ -29,7 +29,7 @@ export default (configContext) => {
             view: {
               type: AutocompleteInput,
               props: {
-                source: 'place/local',
+                source: 'place/local,place/shared',
               },
             },
           },
@@ -68,7 +68,7 @@ export default (configContext) => {
             view: {
               type: AutocompleteInput,
               props: {
-                source: 'place/local',
+                source: 'place/local,place/shared',
               },
             },
           },
