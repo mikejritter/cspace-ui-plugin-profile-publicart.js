@@ -49,7 +49,7 @@ export default (configContext) => {
         },
         responsibleDepartments: {
           responsibleDepartment: {
-          [config]: {
+            [config]: {
             messages: defineMessages({
               name: {
                 id: 'field.groups_common.responsibleDepartment.name',
@@ -57,14 +57,14 @@ export default (configContext) => {
               },
             }),
             view: {
-                type: TermPickerInput,
-                props: {
+              type: TermPickerInput,
+              props: {
                   source: 'program',
                 },
-              },
+            },
+          },
           },
         },
-       },
         owner: {
           [config]: {
             messages: defineMessages({
