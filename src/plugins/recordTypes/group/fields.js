@@ -50,19 +50,19 @@ export default (configContext) => {
         responsibleDepartments: {
           responsibleDepartment: {
             [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.groups_common.responsibleDepartment.name',
-                defaultMessage: 'Responsible department',
-              },
-            }),
-            view: {
-              type: TermPickerInput,
-              props: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.groups_common.responsibleDepartment.name',
+                  defaultMessage: 'Responsible department',
+                },
+              }),
+              view: {
+                type: TermPickerInput,
+                props: {
                   source: 'program',
                 },
+              },
             },
-          },
           },
         },
         owner: {
