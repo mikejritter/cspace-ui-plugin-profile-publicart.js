@@ -4,7 +4,7 @@ export default (configContext) => {
   const {
     AutocompleteInput,
     CompoundInput,
-    OptionPickerInput,
+    TermPickerInput,
     TextInput,
   } = configContext.inputComponents;
 
@@ -47,24 +47,24 @@ export default (configContext) => {
             },
           },
         },
-       responsibleDepartments: {
-        responsibleDepartment: {
+        responsibleDepartments: {
+          responsibleDepartment: {
           [config]: {
             messages: defineMessages({
               name: {
                 id: 'field.groups_common.responsibleDepartment.name',
                 defaultMessage: 'Responsible department',
-                },
-              }),
-              view: {
+              },
+            }),
+            view: {
                 type: TermPickerInput,
                 props: {
                   source: 'program',
                 },
               },
-            },
           },
         },
+       },
         owner: {
           [config]: {
             messages: defineMessages({
