@@ -20,9 +20,7 @@ const template = (configContext) => {
         <Field name="title" />
 
         <Row>
-          <Field name="responsibleDepartments">
-            <Field name="responsibleDepartment" />
-          </Field>
+          <Field name="responsibleDepartment" />
           <Field name="owner" />
         </Row>
 
