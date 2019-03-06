@@ -30,6 +30,10 @@ export default (configContext) => {
         path: 'ns2:collectionobjects_common/recordStatus',
       },
       {
+        op: OP_EQ,
+        path: 'ns2:collectionobjects_common/publishToList/publishTo',
+      },
+      {
         op: OP_CONTAIN,
         path: 'ns2:collectionobjects_common/titleGroupList/titleGroup/title',
       },

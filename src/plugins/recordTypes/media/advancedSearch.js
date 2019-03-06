@@ -30,6 +30,10 @@ export default (configContext) => {
         path: 'ns2:media_common/typeList/type',
       },
       {
+        op: OP_EQ,
+        path: 'ns2:media_publicart/publishToList/publishTo',
+      },
+      {
         op: OP_RANGE,
         path: 'ns2:media_common/dateGroupList/dateGroup',
       },
