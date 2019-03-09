@@ -20,6 +20,9 @@ export default (configContext) => {
 
   return {
     document: {
+      'ns2:places_common': {
+        ...extensions.address.fields,
+      },
       'ns2:places_publicart': {
         [config]: {
           service: {
