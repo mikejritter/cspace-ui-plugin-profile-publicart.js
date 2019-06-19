@@ -16,6 +16,11 @@ export default {
         description: 'The name of a collection of records from the vocabulary.',
         defaultMessage: 'Shared Places',
       },
+      itemName: {
+        id: 'vocab.place.shared.itemName',
+        description: 'The name of a record from the vocabulary.',
+        defaultMessage: 'Shared Place',
+      },
     }),
     serviceConfig: {
       servicePath: 'urn:cspace:name(place_shared)',
