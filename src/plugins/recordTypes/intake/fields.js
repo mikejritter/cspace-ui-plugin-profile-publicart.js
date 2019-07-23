@@ -16,7 +16,7 @@ export default (configContext) => {
               [config]: {
                 view: {
                   props: {
-                    source: 'location/local,place/local,place/shared',
+                    source: 'location/local,location/offsite,organization/local,organization/shared,place/local,place/shared',
                   },
                 },
               },
@@ -27,7 +27,7 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'location/local,place/local,place/shared',
+                source: 'location/local,location/offsite,organization/local,organization/shared,place/local,place/shared',
               },
             },
           },

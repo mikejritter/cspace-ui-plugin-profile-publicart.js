@@ -10,7 +10,7 @@ export default (configContext) => {
           [config]: {
             view: {
               props: {
-                source: 'location/local,location/offsite,organization/local,place/local,place/shared',
+                source: 'location/local,location/offsite,organization/local,organization/shared,place/local,place/shared',
               },
             },
           },
