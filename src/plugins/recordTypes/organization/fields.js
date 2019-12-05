@@ -1,6 +1,5 @@
 import { defineMessages } from 'react-intl';
 
-
 export default (configContext) => {
   const {
     TermPickerInput,
@@ -20,12 +19,6 @@ export default (configContext) => {
       'ns2:organizations_common': {
         foundingPlace: {
           [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.organizations_common.foundingPlace.name',
-                defaultMessage: 'Foundation place',
-              },
-            }),
             view: {
               type: AutocompleteInput,
               props: {

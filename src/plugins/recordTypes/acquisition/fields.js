@@ -22,6 +22,18 @@ export default (configContext) => {
   return {
     document: {
       'ns2:acquisitions_common': {
+        accessionDateGroup: {
+          // Replaced by accessionDate. Hide from search.
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        acquisitionDateGroupList: {
+          // Replaced by acquisitionDates. Hide from search.
+          [config]: {
+            searchDisabled: true,
+          },
+        },
         acquisitionMethod: {
           [config]: {
             view: {

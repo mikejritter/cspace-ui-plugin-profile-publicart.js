@@ -15,12 +15,28 @@ export default (configContext) => {
   } = configContext.configHelpers;
 
   const {
+    DATA_TYPE_STRUCTURED_DATE,
+  } = configContext.dataTypes;
+
+  const {
     extensions,
   } = configContext.config;
 
   return {
     document: {
       'ns2:places_common': {
+        placeType: {
+          // Replaced by publicArtPlaceTypes. Hide from search.
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+        placeOwnerGroupList: {
+          // Replaced by publicartPlaceOwnerGroupList. Hide from search.
+          [config]: {
+            searchDisabled: true,
+          },
+        },
         ...extensions.address.fields,
       },
       'ns2:places_publicart': {
@@ -153,10 +169,15 @@ export default (configContext) => {
             },
             ownershipDateGroup: {
               [config]: {
+                dataType: DATA_TYPE_STRUCTURED_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.places_publicart.ownershipDateGroup.fullName',
                     defaultMessage: 'Ownership date',
+                  },
+                  groupName: {
+                    id: 'field.places_publicart.ownershipDateGroup.groupName',
+                    defaultMessage: 'Date',
                   },
                   name: {
                     id: 'field.places_publicart.ownershipDateGroup.name',
@@ -172,6 +193,10 @@ export default (configContext) => {
             ownershipNote: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.places_publicart.ownershipNote.fullName',
+                    defaultMessage: 'Ownership note',
+                  },
                   name: {
                     id: 'field.places_publicart.ownershipNote.name',
                     defaultMessage: 'Note',

@@ -13,6 +13,14 @@ export default (configContext) => {
 
   return {
     document: {
+      'ns2:media_common': {
+        // Replaced by publicartRightsHolders. Hide from search.
+        rightsHolder: {
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+      },
       'ns2:media_publicart': {
         [config]: {
           service: {

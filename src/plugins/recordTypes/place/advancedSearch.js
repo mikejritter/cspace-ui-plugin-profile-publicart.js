@@ -34,7 +34,7 @@ export default (configContext) => {
       },
       {
         op: OP_EQ,
-        path: 'ns2:places_publicart/placementType',
+        path: 'ns2:places_publicart/placementTypes/placementType',
       },
       {
         op: OP_EQ,

@@ -19,6 +19,14 @@ export default (configContext) => {
 
   return {
     document: {
+      'ns2:locations_common': {
+        address: {
+          // Replaced by address extension. Hide from search.
+          [config]: {
+            searchDisabled: true,
+          },
+        },
+      },
       'ns2:locations_publicart': {
         [config]: {
           service: {

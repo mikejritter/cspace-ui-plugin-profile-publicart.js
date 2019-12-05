@@ -37,6 +37,12 @@ export default (configContext) => {
             },
           },
         },
+        collection: {
+          // Replaced by publicartCollections. Hide from search.
+          [config]: {
+            searchDisabled: true,
+          },
+        },
         inventoryStatusList: {
           inventoryStatus: {
             [config]: {
@@ -70,7 +76,12 @@ export default (configContext) => {
                 },
               },
             },
-
+          },
+        },
+        objectProductionDateGroupList: {
+          // Replaced by publicartProductionDateGroupList. Hide from search.
+          [config]: {
+            searchDisabled: true,
           },
         },
       },
@@ -133,6 +144,10 @@ export default (configContext) => {
                   fullName: {
                     id: 'field.collectionobjects_publicart.publicartProductionDate.fullName',
                     defaultMessage: 'Artwork date',
+                  },
+                  groupName: {
+                    id: 'field.collectionobjects_publicart.publicartProductionDate.groupName',
+                    defaultMessage: 'Date',
                   },
                   name: {
                     id: 'field.collectionobjects_publicart.publicartProductionDate.name',

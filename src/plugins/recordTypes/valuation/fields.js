@@ -49,6 +49,12 @@ export default (configContext) => {
           },
           insuranceGroup: {
             [config]: {
+              messages: defineMessages({
+                fullName: {
+                  id: 'field.valuationcontrols_publicart.insuranceGroup.fullName',
+                  defaultMessage: 'Insurance',
+                },
+              }),
               repeating: true,
               view: {
                 type: CompoundInput,

@@ -94,9 +94,13 @@ export default (configContext) => {
           commissionBudgetType: {
             [config]: {
               messages: defineMessages({
+                fullName: {
+                  id: 'field.ext.commission.commissionBudgetType.fullName',
+                  defaultMessage: 'Budget type',
+                },
                 name: {
                   id: 'field.ext.commission.commissionBudgetType.name',
-                  defaultMessage: 'Budget type',
+                  defaultMessage: 'Type',
                 },
               }),
               view: {
@@ -110,9 +114,13 @@ export default (configContext) => {
           commissionBudgetTypeNote: {
             [config]: {
               messages: defineMessages({
+                fullName: {
+                  id: 'field.ext.commission.commissionBudgetTypeNote.fullName',
+                  defaultMessage: 'Budget note',
+                },
                 name: {
                   id: 'field.ext.commission.commissionBudgetTypeNote.name',
-                  defaultMessage: 'Budget type note',
+                  defaultMessage: 'Note',
                 },
               }),
               view: {
@@ -128,6 +136,10 @@ export default (configContext) => {
               messages: defineMessages({
                 fullName: {
                   id: 'field.ext.commission.commissionProjectedValueCurrency.fullName',
+                  defaultMessage: 'Projected value currency',
+                },
+                groupName: {
+                  id: 'field.ext.commission.commissionProjectedValueCurrency.groupName',
                   defaultMessage: 'Projected value currency',
                 },
                 name: {
@@ -151,6 +163,10 @@ export default (configContext) => {
                   id: 'field.ext.commission.commissionProjectedValueAmount.fullName',
                   defaultMessage: 'Projected value amount',
                 },
+                groupName: {
+                  id: 'field.ext.commission.commissionProjectedValueAmount.groupName',
+                  defaultMessage: 'Projected value amount',
+                },
                 name: {
                   id: 'field.ext.commission.commissionProjectedValueAmount.name',
                   defaultMessage: 'Amount',
@@ -166,6 +182,10 @@ export default (configContext) => {
               messages: defineMessages({
                 fullName: {
                   id: 'field.ext.commission.commissionActualValueCurrency.fullName',
+                  defaultMessage: 'Actual value currency',
+                },
+                groupName: {
+                  id: 'field.ext.commission.commissionActualValueCurrency.groupName',
                   defaultMessage: 'Actual value currency',
                 },
                 name: {
@@ -187,6 +207,10 @@ export default (configContext) => {
               messages: defineMessages({
                 fullName: {
                   id: 'field.ext.commission.commissionActualValueAmount.fullName',
+                  defaultMessage: 'Actual value amount',
+                },
+                groupName: {
+                  id: 'field.ext.commission.commissionActualValueAmount.groupName',
                   defaultMessage: 'Actual value amount',
                 },
                 name: {
