@@ -3,7 +3,7 @@ import fields from './fields';
 import form from './form';
 import messages from './messages';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   extensions: {
     commission: {
       advancedSearch: advancedSearch(configContext),

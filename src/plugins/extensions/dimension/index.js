@@ -1,6 +1,6 @@
 import form from './form';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   extensions: {
     dimension: {
       form: form(configContext),

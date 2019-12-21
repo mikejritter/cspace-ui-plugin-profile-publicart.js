@@ -3,7 +3,7 @@ import fields from './fields';
 import forms from './forms';
 import vocabularies from './vocabularies';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   recordTypes: {
     person: {
       vocabularies,

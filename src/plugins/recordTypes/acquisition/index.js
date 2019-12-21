@@ -2,7 +2,7 @@ import advancedSearch from './advancedSearch';
 import fields from './fields';
 import forms from './forms';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   recordTypes: {
     acquisition: {
       advancedSearch: advancedSearch(configContext),

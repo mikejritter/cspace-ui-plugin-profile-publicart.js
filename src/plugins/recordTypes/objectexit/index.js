@@ -1,6 +1,6 @@
 import forms from './forms';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   recordTypes: {
     objectexit: {
       forms: forms(configContext),

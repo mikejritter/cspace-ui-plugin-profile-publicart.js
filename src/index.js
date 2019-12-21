@@ -23,5 +23,5 @@ export default () => ({
       version: cspaceUIPluginProfilePublicArt.packageVersion,
     },
   },
-  plugins: plugins.map(plugin => plugin()),
+  plugins: plugins.map((plugin) => plugin()),
 });

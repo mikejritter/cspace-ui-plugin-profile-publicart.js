@@ -1,7 +1,7 @@
 import defaultForm from './default';
 import tombstoneForm from './tombstone';
 
-export default configContext => ({
+export default (configContext) => ({
   default: defaultForm(configContext),
   inventory: {
     disabled: true,
