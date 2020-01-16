@@ -84,6 +84,8 @@ const template = (configContext) => {
             <CompoundInput subpath="ns2:persons_publicart">
               {extensions.socialMedia.form}
             </CompoundInput>
+
+            <Field name="bioNote" />
           </Col>
         </Row>
       </Panel>
