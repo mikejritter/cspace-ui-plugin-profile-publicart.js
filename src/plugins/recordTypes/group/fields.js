@@ -7,6 +7,10 @@ export default (configContext) => {
     configKey: config,
   } = configContext.configHelpers;
 
+  const {
+    extensions,
+  } = configContext.config;
+
   return {
     document: {
       'ns2:groups_common': {
@@ -30,6 +34,7 @@ export default (configContext) => {
           },
         },
       },
+      ...extensions.checklist.fields,
     },
   };
 };
