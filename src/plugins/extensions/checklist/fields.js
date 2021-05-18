@@ -33,9 +33,9 @@ export default (configContext) => {
         checklistGroup: {
           [config]: {
             messages: defineMessages({
-              name: {
-                id: 'field.groups_checklist.checklistGroup.name',
-                defaultMessage: 'Checklists',
+              fullName: {
+                id: 'field.groups_checklist.checklistGroup.fullName',
+                defaultMessage: 'Checklist',
               },
             }),
             repeating: true,
@@ -73,7 +73,7 @@ export default (configContext) => {
                 },
                 name: {
                   id: 'field.groups_checklist.checklistOpenDate.name',
-                  defaultMessage: 'Start',
+                  defaultMessage: 'Start date',
                 },
               }),
               view: {
@@ -91,7 +91,7 @@ export default (configContext) => {
                 },
                 name: {
                   id: 'field.groups_checklist.checklistCloseDate.name',
-                  defaultMessage: 'Close',
+                  defaultMessage: 'Close date',
                 },
               }),
               view: {
@@ -128,9 +128,13 @@ export default (configContext) => {
             checklistItemGroup: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.groups_checklist.checklistItemGroup.fullName',
+                    defaultMessage: 'Checklist item',
+                  },
                   name: {
                     id: 'field.groups_checklist.checklistItemGroup.name',
-                    defaultMessage: 'Checklist items',
+                    defaultMessage: 'Item',
                   },
                 }),
                 repeating: true,
@@ -146,11 +150,11 @@ export default (configContext) => {
                   messages: defineMessages({
                     fullName: {
                       id: 'field.groups_checklist.checklistItem.fullName',
-                      defaultMessage: 'Checklist item',
+                      defaultMessage: 'Checklist item description',
                     },
                     name: {
                       id: 'field.groups_checklist.checklistItem.name',
-                      defaultMessage: 'Item',
+                      defaultMessage: 'Description',
                     },
                   }),
                   view: {
@@ -161,6 +165,10 @@ export default (configContext) => {
               checklistAssignee: {
                 [config]: {
                   messages: defineMessages({
+                    fullName: {
+                      id: 'field.groups_checklist.checklistAssignee.fullName',
+                      defaultMessage: 'Checklist item assigned to',
+                    },
                     name: {
                       id: 'field.groups_checklist.checklistAssignee.name',
                       defaultMessage: 'Assigned to',
@@ -177,6 +185,10 @@ export default (configContext) => {
               checklistStatus: {
                 [config]: {
                   messages: defineMessages({
+                    fullName: {
+                      id: 'field.groups_checklist.checklistStatus.fullName',
+                      defaultMessage: 'Checklist item status',
+                    },
                     name: {
                       id: 'field.groups_checklist.checklistStatus.name',
                       defaultMessage: 'Status',
@@ -196,11 +208,11 @@ export default (configContext) => {
                   messages: defineMessages({
                     fullName: {
                       id: 'field.groups_checklist.checklistStatusDate.fullName',
-                      defaultMessage: 'Status date',
+                      defaultMessage: 'Checklist item status date',
                     },
                     name: {
                       id: 'field.groups_checklist.checklistStatusDate.name',
-                      defaultMessage: 'Date',
+                      defaultMessage: 'Status date',
                     },
                   }),
                   view: {
