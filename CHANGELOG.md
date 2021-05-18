@@ -4,7 +4,11 @@
 
 ### Breaking Changes
 
-- v3.0.0 requires cspace-ui version 6. On the record editor form for Object records, the annotation field group (`annotationGroupList`) has been added. These fields are defined in cspace-ui version 6.0.0, but not in prior versions. To use this version of cspace-ui-plugin-profile-publicart with an older version of cspace-ui, this field group should be hidden; otherwise, any values entered will not be saved.
+- v3.0.0 requires cspace-ui version 6, and a CollectionSpace 7 server.
+
+- Object record:
+  - The annotation field group (`annotationGroupList`) has been added to the record editor form. These fields are defined in cspace-ui version 6.0.0, but not in prior versions. To use this version of cspace-ui-plugin-profile-publicart with an older version of cspace-ui, this field group should be hidden; otherwise, any values entered will not be saved.
+  - The Checklist field group (`checklistGroupList`) has been added to the record editor form. These fields are defined in CollectionSpace 7, but not in prior versions. To use this version of cspace-ui-plugin-profile-publicart with an older CollectionSpace server, this field group should be hidden; otherwise, any values entered will not be saved.
 
 ## v2.0.0
 
