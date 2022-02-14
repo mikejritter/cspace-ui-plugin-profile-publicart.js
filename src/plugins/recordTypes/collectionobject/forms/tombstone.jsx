@@ -22,12 +22,12 @@ const template = (configContext) => {
           <Col>
             <Field name="objectNumber" />
 
-            <Field name="responsibleDepartments">
-              <Field name="responsibleDepartment" />
-            </Field>
-
             <Field name="publicartCollections" subpath="ns2:collectionobjects_publicart">
               <Field name="publicartCollection" />
+            </Field>
+
+            <Field name="publishToList">
+              <Field name="publishTo" />
             </Field>
           </Col>
 
