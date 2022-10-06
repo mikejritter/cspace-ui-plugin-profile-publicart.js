@@ -1,5 +1,11 @@
 # Change Log
 
+## v4.0.0
+
+### Breaking Changes
+
+- v4.0.0 requires cspace-ui version 7, and a CollectionSpace 7.1 server. On the record editor form for Object records, copyright fields have been added. These fields are defined in cspace-ui 7.0.0/CollectionSpace 7.1, but not in prior versions. To use this version of cspace-ui-plugin-profile-publicart with an older version of CollectionSpace, these fields should be hidden; otherwise, any values entered will not be saved.
+
 ## v3.0.0
 
 ### Breaking Changes
