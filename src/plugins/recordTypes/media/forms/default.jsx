@@ -29,6 +29,14 @@ const template = (configContext) => {
 
         <Field name="externalUrl" />
 
+        <Field name="checksumGroupList">
+          <Field name="checksumGroup">
+            <Field name="checksumValue" />
+            <Field name="checksumType" />
+            <Field name="checksumDate" />
+          </Field>
+        </Field>
+
         <Cols>
           <Col>
             <Field name="contributor" />
