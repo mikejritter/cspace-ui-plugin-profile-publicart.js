@@ -9,6 +9,9 @@ export default (configContext) => ({
   photo: {
     disabled: true,
   },
+  public: {
+    disabled: true,
+  },
   timebased: {
     disabled: true,
   },
