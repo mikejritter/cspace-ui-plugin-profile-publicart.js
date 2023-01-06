@@ -57,6 +57,11 @@ export default (configContext) => {
                 source: 'location/local,location/offsite,organization/local,organization/shared,place/local,place/shared',
               },
             },
+            view: {
+              props: {
+                source: 'location/local,location/offsite,organization/local,organization/shared,place/local,place/shared',
+              },
+            },
           },
         },
         objectNameList: {
