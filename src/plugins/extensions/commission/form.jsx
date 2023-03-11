@@ -1,19 +1,25 @@
 export default (configContext) => {
   const {
+    layoutComponents,
+    lib,
+    recordComponents,
+  } = configContext;
+
+  const {
     React,
-  } = configContext.lib;
+  } = lib;
 
   const {
     Col,
     Cols,
     Panel,
     Row,
-  } = configContext.layoutComponents;
+  } = layoutComponents;
 
   const {
     Field,
     InputTable,
-  } = configContext.recordComponents;
+  } = recordComponents;
 
   return (
     <Panel name="commission" collapsible collapsed>
