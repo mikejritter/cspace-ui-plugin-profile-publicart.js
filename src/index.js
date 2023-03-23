@@ -20,6 +20,12 @@ export default () => ({
           defaultMessage: 'Public Art profile',
         },
       }),
+      packageName: cspaceUIPluginProfilePublicArt.packageName,
+      packageVersion: cspaceUIPluginProfilePublicArt.packageVersion,
+      buildNum: cspaceUIPluginProfilePublicArt.buildNum,
+      repositoryUrl: cspaceUIPluginProfilePublicArt.repositoryUrl,
+      // packageVersion is now preferred, but keep version for backward compatibility with older
+      // versions of cspace-ui.
       version: cspaceUIPluginProfilePublicArt.packageVersion,
     },
   },
