@@ -1,6 +1,7 @@
 # cspace-ui-plugin-profile-publicart
 
-[![build status](https://travis-ci.org/collectionspace/cspace-ui-plugin-profile-publicart.js.svg?branch=master)](https://travis-ci.org/collectionspace/cspace-ui-plugin-profile-publicart.js)
+[![npm package](https://img.shields.io/npm/v/cspace-ui-plugin-profile-publicart.svg)](https://www.npmjs.com/package/cspace-ui-plugin-profile-publicart)
+[![continuous integration](https://github.com/collectionspace/cspace-ui-plugin-profile-publicart.js/actions/workflows/ci-js.yml/badge.svg?branch=master&event=push)](https://github.com/collectionspace/cspace-ui-plugin-profile-publicart.js/actions/workflows/ci-js.yml)
 
 Public Art profile plugin for the CollectionSpace UI.
 
