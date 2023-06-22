@@ -1,5 +1,11 @@
 # Change Log
 
+## v5.0.0
+
+### Breaking Changes
+
+There are no breaking changes from version 4.
+
 ## v4.0.0
 
 ### Breaking Changes
