@@ -4,6 +4,9 @@ export default {
   tgn: {
     disabled: true,
   },
+  archaeological: {
+    disabled: true,
+  },
   shared: {
     messages: defineMessages({
       name: {
