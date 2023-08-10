@@ -1,4 +1,5 @@
 import acquisition from './acquisition';
+import chronology from './chronology';
 import collectionobject from './collectionobject';
 import concept from './concept';
 import conditioncheck from './conditioncheck';
@@ -20,6 +21,7 @@ import work from './work';
 
 export default [
   acquisition,
+  chronology,
   collectionobject,
   concept,
   conditioncheck,
