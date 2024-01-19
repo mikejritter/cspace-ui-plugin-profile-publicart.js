@@ -3,9 +3,6 @@ import { defineMessages } from 'react-intl';
 export default {
   exitReasons: {
     values: [
-      'deaccession',
-      'disposal',
-      'returnofloan',
       'temporary',
       'transfer',
       'painted out',
@@ -13,18 +10,6 @@ export default {
       'lost to demolition',
     ],
     messages: defineMessages({
-      deaccession: {
-        id: 'option.exitReasons.deaccession',
-        defaultMessage: 'deaccession',
-      },
-      disposal: {
-        id: 'option.exitReasons.disposal',
-        defaultMessage: 'disposal',
-      },
-      returnofloan: {
-        id: 'option.exitReasons.returnofloan',
-        defaultMessage: 'return of loan',
-      },
       temporary: {
         id: 'option.exitReasons.temporary',
         defaultMessage: 'temporary',
