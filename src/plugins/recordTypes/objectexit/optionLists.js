@@ -3,6 +3,9 @@ import { defineMessages } from 'react-intl';
 export default {
   exitReasons: {
     values: [
+      'deaccession',
+      'disposal',
+      'returnofloan',
       'temporary',
       'transfer',
       'painted out',
