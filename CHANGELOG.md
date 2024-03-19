@@ -1,5 +1,14 @@
 # Change Log
 
+## v6.0.0
+
+v6.0.0 adds support for CollectionSpace 8.0, and requires cspace-ui version 9.
+
+### Breaking Changes
+
+- On the record editor form for Object records:
+  - The number of objects field (`numberOfObjects`) has been replaced with the repeating object count group (`objectCountGroupList/objectCountGroup`). If this version of the public art profile is used with an older CollectionSpace server, values entered in the repeating group will not be saved.
+
 ## v5.0.0
 
 ### Breaking Changes
