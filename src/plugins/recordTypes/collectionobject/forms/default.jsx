@@ -62,6 +62,19 @@ const template = (configContext) => {
           </Col>
         </Row>
 
+        <Field name="annotationGroupList" subpath="ns2:collectionobjects_annotation">
+          <Field name="annotationGroup">
+            <Panel>
+              <Row>
+                <Field name="annotationType" />
+                <Field name="annotationDate" />
+                <Field name="annotationAuthor" />
+              </Row>
+              <Field name="annotationNote" />
+            </Panel>
+          </Field>
+        </Field>
+
         <Field name="titleGroupList">
           <Field name="titleGroup">
             <Panel>
