@@ -1,5 +1,10 @@
 # Change Log
 
+## v6.1.0
+
+- On the record editor form for Object records:
+  - Add annotation group (`annotationGroupList/annotationGroup`) to the default template
+
 ## v6.0.0
 
 v6.0.0 adds support for CollectionSpace 8.0, and requires cspace-ui version 9.
